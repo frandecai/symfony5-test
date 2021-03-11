@@ -23,28 +23,29 @@
                 </div>
                 <div class="card-body">
                     <p class="login-box-msg">Sign in to start your session</p>
-
-                    <form method="post">
+                    <form method="post">                    
                     <div class="input-group mb-3">
-                        {% if error %}
-                            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                        {% endif %}
                         <input type="email" class="form-control" value="{{ last_username }}" id="inputEmail" name="email" placeholder="Email" required autofocus>
                         <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
-                        </div>
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
                         </div>
                     </div>
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
                         <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
                         <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
                         </div>
                     </div>
+                    {% if error %}
+                    <div class="input-group mb-3">
+                        <p class="font-weight-bold text-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+                    </div>
+                    {% endif %}
                     <div class="row">
                         <div class="col-8">
                         <div class="icheck-primary">

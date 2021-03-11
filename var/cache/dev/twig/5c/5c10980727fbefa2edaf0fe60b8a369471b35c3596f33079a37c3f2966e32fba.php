@@ -133,41 +133,44 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
                 </div>
                 <div class=\"card-body\">
                     <p class=\"login-box-msg\">Sign in to start your session</p>
-
-                    <form method=\"post\">
+                    <form method=\"post\">                    
                     <div class=\"input-group mb-3\">
-                        ";
-        // line 29
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 29, $this->source); })())) {
-            // line 30
-            echo "                            <div class=\"alert alert-danger\">";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 30, $this->source); })()), "messageKey", [], "any", false, false, false, 30), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 30, $this->source); })()), "messageData", [], "any", false, false, false, 30), "security"), "html", null, true);
-            echo "</div>
-                        ";
-        }
-        // line 32
-        echo "                        <input type=\"email\" class=\"form-control\" value=\"";
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 32, $this->source); })()), "html", null, true);
+                        <input type=\"email\" class=\"form-control\" value=\"";
+        // line 28
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 28, $this->source); })()), "html", null, true);
         echo "\" id=\"inputEmail\" name=\"email\" placeholder=\"Email\" required autofocus>
                         <div class=\"input-group-append\">
-                        <div class=\"input-group-text\">
-                            <span class=\"fas fa-envelope\"></span>
-                        </div>
+                            <div class=\"input-group-text\">
+                                <span class=\"fas fa-envelope\"></span>
+                            </div>
                         </div>
                     </div>
                     <div class=\"input-group mb-3\">
                         <input type=\"password\" class=\"form-control\" id=\"inputPassword\" name=\"password\" class=\"form-control\" placeholder=\"Password\" required>
                         <input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 41
+        // line 37
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
                         <div class=\"input-group-append\">
-                        <div class=\"input-group-text\">
-                            <span class=\"fas fa-lock\"></span>
-                        </div>
+                            <div class=\"input-group-text\">
+                                <span class=\"fas fa-lock\"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class=\"row\">
+                    ";
+        // line 44
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 44, $this->source); })())) {
+            // line 45
+            echo "                    <div class=\"input-group mb-3\">
+                        <p class=\"font-weight-bold text-danger\">";
+            // line 46
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 46, $this->source); })()), "messageKey", [], "any", false, false, false, 46), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 46, $this->source); })()), "messageData", [], "any", false, false, false, 46), "security"), "html", null, true);
+            echo "</p>
+                    </div>
+                    ";
+        }
+        // line 49
+        echo "                    <div class=\"row\">
                         <div class=\"col-8\">
                         <div class=\"icheck-primary\">
                             <input type=\"checkbox\" id=\"remember\">
@@ -194,9 +197,9 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
         </div>
 
         ";
-        // line 74
+        // line 75
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 82
+        // line 83
         echo "    </body>
 ";
         
@@ -207,7 +210,7 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
 
     }
 
-    // line 74
+    // line 75
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -217,20 +220,20 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 75
+        // line 76
         echo "            <!-- jQuery -->
             <script src=\"";
-        // line 76
+        // line 77
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.min.js"), "html", null, true);
         echo "\"></script>
             <!-- Bootstrap 4 -->
             <script src=\"";
-        // line 78
+        // line 79
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
             <!-- AdminLTE App -->
             <script src=\"";
-        // line 80
+        // line 81
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/adminlte.min.js"), "html", null, true);
         echo "\"></script>
         ";
@@ -254,7 +257,7 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
 
     public function getDebugInfo()
     {
-        return array (  234 => 80,  229 => 78,  224 => 76,  221 => 75,  211 => 74,  200 => 82,  198 => 74,  162 => 41,  149 => 32,  143 => 30,  141 => 29,  127 => 17,  117 => 16,  105 => 13,  100 => 11,  95 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  237 => 81,  232 => 79,  227 => 77,  224 => 76,  214 => 75,  203 => 83,  201 => 75,  173 => 49,  167 => 46,  164 => 45,  162 => 44,  152 => 37,  140 => 28,  127 => 17,  117 => 16,  105 => 13,  100 => 11,  95 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -284,28 +287,29 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
                 </div>
                 <div class=\"card-body\">
                     <p class=\"login-box-msg\">Sign in to start your session</p>
-
-                    <form method=\"post\">
+                    <form method=\"post\">                    
                     <div class=\"input-group mb-3\">
-                        {% if error %}
-                            <div class=\"alert alert-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                        {% endif %}
                         <input type=\"email\" class=\"form-control\" value=\"{{ last_username }}\" id=\"inputEmail\" name=\"email\" placeholder=\"Email\" required autofocus>
                         <div class=\"input-group-append\">
-                        <div class=\"input-group-text\">
-                            <span class=\"fas fa-envelope\"></span>
-                        </div>
+                            <div class=\"input-group-text\">
+                                <span class=\"fas fa-envelope\"></span>
+                            </div>
                         </div>
                     </div>
                     <div class=\"input-group mb-3\">
                         <input type=\"password\" class=\"form-control\" id=\"inputPassword\" name=\"password\" class=\"form-control\" placeholder=\"Password\" required>
                         <input type=\"hidden\" name=\"_csrf_token\" value=\"{{ csrf_token('authenticate') }}\">
                         <div class=\"input-group-append\">
-                        <div class=\"input-group-text\">
-                            <span class=\"fas fa-lock\"></span>
-                        </div>
+                            <div class=\"input-group-text\">
+                                <span class=\"fas fa-lock\"></span>
+                            </div>
                         </div>
                     </div>
+                    {% if error %}
+                    <div class=\"input-group mb-3\">
+                        <p class=\"font-weight-bold text-danger\">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+                    </div>
+                    {% endif %}
                     <div class=\"row\">
                         <div class=\"col-8\">
                         <div class=\"icheck-primary\">

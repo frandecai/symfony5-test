@@ -78,13 +78,19 @@ class __TwigTemplate_f2d6cd6aff04a640217fe64752554ec00c1dc581f8da8967efc52f184de
         <!-- Left navbar links -->
         <ul class=\"navbar-nav\">
             <li class=\"nav-item\">
-            <a class=\"nav-link\" data-widget=\"pushmenu\" href=\"#\" role=\"button\"><i class=\"fas fa-bars\"></i></a>
+                <a class=\"nav-link\" data-widget=\"pushmenu\" href=\"#\" role=\"button\"><i class=\"fas fa-bars\"></i></a>
             </li>
             <li class=\"nav-item d-none d-sm-inline-block\">
-            <a href=\"index3.html\" class=\"nav-link\">Home</a>
+                <a href=\"index3.html\" class=\"nav-link\">Home</a>
             </li>
             <li class=\"nav-item d-none d-sm-inline-block\">
-            <a href=\"#\" class=\"nav-link\">Contact</a>
+                <a href=\"#\" class=\"nav-link\">Contact</a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"";
+        // line 39
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin_logout");
+        echo "\" class=\"nav-link\">Logout</a>
             </li>
         </ul>
 
@@ -1764,57 +1770,57 @@ class __TwigTemplate_f2d6cd6aff04a640217fe64752554ec00c1dc581f8da8967efc52f184de
     <!-- REQUIRED SCRIPTS -->
     <!-- jQuery -->
     <script src=\"";
-        // line 1715
+        // line 1718
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery.min.js"), "html", null, true);
         echo "\"></script>
     <!-- Bootstrap -->
     <script src=\"";
-        // line 1717
+        // line 1720
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
     <!-- overlayScrollbars -->
     <script src=\"";
-        // line 1719
+        // line 1722
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/overlayScrollbars/jquery.overlayScrollbars.min.js"), "html", null, true);
         echo "\"></script>
     <!-- AdminLTE App -->
     <script src=\"";
-        // line 1721
+        // line 1724
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/adminlte.js"), "html", null, true);
         echo "\"></script>
 
     <!-- PAGE PLUGINS -->
     <!-- jQuery Mapael -->
     <script src=\"";
-        // line 1725
+        // line 1728
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-mousewheel/jquery.mousewheel.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 1726
+        // line 1729
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/raphael/raphael.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 1727
+        // line 1730
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-mapael/jquery.mapael.min.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 1728
+        // line 1731
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery-mapael/maps/usa_states.min.js"), "html", null, true);
         echo "\"></script>
     <!-- ChartJS -->
     <script src=\"";
-        // line 1730
+        // line 1733
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/chart.js/Chart.min.js"), "html", null, true);
         echo "\"></script>
 
     <!-- AdminLTE for demo purposes -->
     <script src=\"";
-        // line 1733
+        // line 1736
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/demo.js"), "html", null, true);
         echo "\"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src=\"";
-        // line 1735
+        // line 1738
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/dashboard2.js"), "html", null, true);
         echo "\"></script>
 </body>
@@ -1840,7 +1846,7 @@ class __TwigTemplate_f2d6cd6aff04a640217fe64752554ec00c1dc581f8da8967efc52f184de
 
     public function getDebugInfo()
     {
-        return array (  1818 => 1735,  1813 => 1733,  1807 => 1730,  1802 => 1728,  1798 => 1727,  1794 => 1726,  1790 => 1725,  1783 => 1721,  1778 => 1719,  1773 => 1717,  1768 => 1715,  65 => 15,  60 => 13,  55 => 11,  43 => 1,);
+        return array (  1824 => 1738,  1819 => 1736,  1813 => 1733,  1808 => 1731,  1804 => 1730,  1800 => 1729,  1796 => 1728,  1789 => 1724,  1784 => 1722,  1779 => 1720,  1774 => 1718,  92 => 39,  65 => 15,  60 => 13,  55 => 11,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1874,13 +1880,16 @@ class __TwigTemplate_f2d6cd6aff04a640217fe64752554ec00c1dc581f8da8967efc52f184de
         <!-- Left navbar links -->
         <ul class=\"navbar-nav\">
             <li class=\"nav-item\">
-            <a class=\"nav-link\" data-widget=\"pushmenu\" href=\"#\" role=\"button\"><i class=\"fas fa-bars\"></i></a>
+                <a class=\"nav-link\" data-widget=\"pushmenu\" href=\"#\" role=\"button\"><i class=\"fas fa-bars\"></i></a>
             </li>
             <li class=\"nav-item d-none d-sm-inline-block\">
-            <a href=\"index3.html\" class=\"nav-link\">Home</a>
+                <a href=\"index3.html\" class=\"nav-link\">Home</a>
             </li>
             <li class=\"nav-item d-none d-sm-inline-block\">
-            <a href=\"#\" class=\"nav-link\">Contact</a>
+                <a href=\"#\" class=\"nav-link\">Contact</a>
+            </li>
+            <li class=\"nav-item d-none d-sm-inline-block\">
+                <a href=\"{{ path('app_admin_logout') }}\" class=\"nav-link\">Logout</a>
             </li>
         </ul>
 
