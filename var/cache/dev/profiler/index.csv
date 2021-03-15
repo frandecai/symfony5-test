@@ -60,3 +60,6 @@ ed50c5,127.0.0.1,GET,https://127.0.0.1:8000/favicon.ico,1615829534,,404
 ce577a,127.0.0.1,GET,https://127.0.0.1:8000/js/adminlte.js.map,1615829544,,404
 527f95,127.0.0.1,GET,https://127.0.0.1:8000/css/adminlte.min.css.map,1615829548,c4aada,404
 c4aada,127.0.0.1,GET,https://127.0.0.1:8000/css/adminlte.min.css.map,1615829548,,404
+740dba,127.0.0.1,GET,https://127.0.0.1:8000/admin,1615829910,,200
+53b413,127.0.0.1,GET,https://127.0.0.1:8000/admin/logout,1615829937,,302
+610365,127.0.0.1,GET,https://127.0.0.1:8000/admin/login,1615829941,,200
