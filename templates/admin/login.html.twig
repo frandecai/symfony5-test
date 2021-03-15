@@ -1,4 +1,4 @@
-{% extends 'base_admin.html.twig' %}
+{% extends 'admin/base.html.twig' %}
 
 {% block title %}Test Symfony 5 - Login{% endblock %}
 
@@ -74,9 +74,9 @@
 
         {% block javascripts %}
             <!-- jQuery -->
-            <script src="{{ asset('js/jquery.min.js') }}"></script>
+            <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
             <!-- Bootstrap 4 -->
-            <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}"></script>
             <!-- AdminLTE App -->
             <script src="{{ asset('js/adminlte.min.js') }}"></script>
         {% endblock %}
