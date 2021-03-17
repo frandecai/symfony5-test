@@ -6,9 +6,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Doctrine\ORM\EntityManagerInterface;
+use App\Entity\Role;
 
 class AdminController extends AbstractController
 {
+    private $entityManager;
+
+    public function __construct(EntityManagerInterface $entityManager)
+    {
+        $this->entityManager = $entityManager;
+    }
+
     /**
      * @Route("/admin", name="app_admin_index")
      */
@@ -23,8 +32,12 @@ class AdminController extends AbstractController
      */
     public function roles()
     {
-        return $this->render('admin/roles.html.twig');
-    }    
+        $em = $this->entityManager;
+        $roleRepository = $em->getRepository('Role');
+        $roles = $roleRepository->findAll();
+
+        return $this->render('admin/roles.html.twig', array('roles' => $roles));
+    }
 
 
     /**

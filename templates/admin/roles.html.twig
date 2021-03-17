@@ -52,11 +52,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>Trident</td>
-                                            <td>Win 95+</td>
+                                        {% for role in roles %}
+                                            <td>{{ role.name|e }}</td>
+                                            <td>{{ role.description|e }}</td>
                                             <td></td>
-                                        </tr>
+                                        {% endfor %}
                                     </tbody>
                                 </table>
                             </div>

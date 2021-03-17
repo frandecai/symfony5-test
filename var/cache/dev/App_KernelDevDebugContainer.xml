@@ -334,6 +334,7 @@
     <service id="App\Controller\AdminController" class="App\Controller\AdminController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.5nX7ca3.App\Controller\AdminController"/>
       </call>
@@ -348,12 +349,12 @@
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>
     </service>
+    <service id="App\DataFixtures\RoleFixture" class="App\DataFixtures\RoleFixture" autowire="true" autoconfigure="true">
+      <tag name="doctrine.fixture.orm"/>
+    </service>
     <service id="App\DataFixtures\UserFixture" class="App\DataFixtures\UserFixture" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>
       <argument type="service" id="security.user_password_encoder.generic"/>
-    </service>
-    <service id="App\DataFixtures\UserFixtures" class="App\DataFixtures\UserFixtures" autowire="true" autoconfigure="true">
-      <tag name="doctrine.fixture.orm"/>
     </service>
     <service id="App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
@@ -5190,11 +5191,11 @@
             <argument key="groups" type="collection"/>
           </argument>
           <argument type="collection">
-            <argument key="fixture" type="service" id="App\DataFixtures\UserFixture"/>
+            <argument key="fixture" type="service" id="App\DataFixtures\RoleFixture"/>
             <argument key="groups" type="collection"/>
           </argument>
           <argument type="collection">
-            <argument key="fixture" type="service" id="App\DataFixtures\UserFixtures"/>
+            <argument key="fixture" type="service" id="App\DataFixtures\UserFixture"/>
             <argument key="groups" type="collection"/>
           </argument>
         </argument>
@@ -5211,10 +5212,10 @@
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\RoleFixture" class="App\DataFixtures\RoleFixture" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\DataFixtures\RoleFixture" class="App\DataFixtures\RoleFixture" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\UserFixture" class="App\DataFixtures\UserFixture" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\DataFixtures\UserFixture" class="App\DataFixtures\UserFixture" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\UserFixtures" class="App\DataFixtures\UserFixtures" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\DataFixtures\UserFixtures" class="App\DataFixtures\UserFixtures" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.Kbr2i2X" class="Symfony\Component\DependencyInjection\ServiceLocator">
