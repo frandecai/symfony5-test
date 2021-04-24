@@ -2,11 +2,11 @@
 
 namespace App\Entity;
 
-use App\Repository\RolesRepository;
+use App\Repository\RoleRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=RolesRepository::class)
+ * @ORM\Entity(repositoryClass=RoleRepository::class)
  * @ORM\Table(name="`role`")
  */
 class Role

@@ -17,6 +17,8 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'app_admin_index' => [[], ['_controller' => 'App\\Controller\\AdminController::index'], [], [['text', '/admin']], [], []],
     'app_admin_roles' => [[], ['_controller' => 'App\\Controller\\AdminController::roles'], [], [['text', '/admin/roles']], [], []],
+    'app_admin_role_save' => [[], ['_controller' => 'App\\Controller\\AdminController::roleSave'], [], [['text', '/admin/role/save']], [], []],
+    'app_admin_role_remove' => [[], ['_controller' => 'App\\Controller\\AdminController::roleRemove'], [], [['text', '/admin/role/remove']], [], []],
     'app_admin_users' => [[], ['_controller' => 'App\\Controller\\AdminController::users'], [], [['text', '/admin/users']], [], []],
     'app_admin_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/admin/login']], [], []],
     'app_admin_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/admin/logout']], [], []],

@@ -31,6 +31,7 @@ class __TwigTemplate_0cd65d3358d1219291202c1116f9d5dd5c9a7680929ea6769f1128a12be
             'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
             'content' => [$this, 'block_content'],
+            'footer' => [$this, 'block_footer'],
             'javascripts' => [$this, 'block_javascripts'],
         ];
     }
@@ -64,7 +65,7 @@ class __TwigTemplate_0cd65d3358d1219291202c1116f9d5dd5c9a7680929ea6769f1128a12be
     ";
         // line 11
         $this->displayBlock('body', $context, $blocks);
-        // line 239
+        // line 241
         echo "    </body>
 </html>
 ";
@@ -367,20 +368,17 @@ class __TwigTemplate_0cd65d3358d1219291202c1116f9d5dd5c9a7680929ea6769f1128a12be
                 </aside>
                 <!-- /.control-sidebar -->
 
-                <!-- Main Footer -->
-                <footer class=\"main-footer\">
-                <strong>Copyright &copy; 2021 <a href=\"https://www.fjtorres.es\">fjtorres.es</a>.</strong>
-                All rights reserved.
-                <div class=\"float-right d-none d-sm-inline-block\">
-                    <b>Version</b> 1.0.0
-                </div>
-                </footer>
+                ";
+        // line 227
+        $this->displayBlock('footer', $context, $blocks);
+        // line 236
+        echo "                
             </div>
             <!-- ./wrapper -->º    
             ";
-        // line 237
+        // line 239
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 238
+        // line 240
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -410,7 +408,35 @@ class __TwigTemplate_0cd65d3358d1219291202c1116f9d5dd5c9a7680929ea6769f1128a12be
 
     }
 
-    // line 237
+    // line 227
+    public function block_footer($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 228
+        echo "                    <!-- Main Footer -->
+                    <footer class=\"main-footer\">
+                    <strong>Copyright &copy; 2021 <a href=\"https://www.fjtorres.es\">fjtorres.es</a>.</strong>
+                    All rights reserved.
+                    <div class=\"float-right d-none d-sm-inline-block\">
+                        <b>Version</b> 1.0.0
+                    </div>
+                    </footer>
+                ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 239
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -435,7 +461,7 @@ class __TwigTemplate_0cd65d3358d1219291202c1116f9d5dd5c9a7680929ea6769f1128a12be
 
     public function getDebugInfo()
     {
-        return array (  414 => 237,  404 => 219,  394 => 218,  384 => 238,  382 => 237,  363 => 220,  361 => 218,  346 => 206,  337 => 200,  308 => 174,  296 => 165,  232 => 104,  213 => 88,  194 => 72,  153 => 34,  133 => 17,  126 => 12,  116 => 11,  98 => 8,  80 => 7,  68 => 239,  66 => 11,  62 => 9,  60 => 8,  56 => 7,  48 => 1,);
+        return array (  440 => 239,  422 => 228,  412 => 227,  402 => 219,  392 => 218,  382 => 240,  380 => 239,  375 => 236,  373 => 227,  364 => 220,  362 => 218,  347 => 206,  338 => 200,  309 => 174,  297 => 165,  233 => 104,  214 => 88,  195 => 72,  154 => 34,  134 => 17,  127 => 12,  117 => 11,  99 => 8,  81 => 7,  69 => 241,  67 => 11,  63 => 9,  61 => 8,  57 => 7,  49 => 1,);
     }
 
     public function getSourceContext()
@@ -666,14 +692,16 @@ class __TwigTemplate_0cd65d3358d1219291202c1116f9d5dd5c9a7680929ea6769f1128a12be
                 </aside>
                 <!-- /.control-sidebar -->
 
-                <!-- Main Footer -->
-                <footer class=\"main-footer\">
-                <strong>Copyright &copy; 2021 <a href=\"https://www.fjtorres.es\">fjtorres.es</a>.</strong>
-                All rights reserved.
-                <div class=\"float-right d-none d-sm-inline-block\">
-                    <b>Version</b> 1.0.0
-                </div>
-                </footer>
+                {% block footer %}
+                    <!-- Main Footer -->
+                    <footer class=\"main-footer\">
+                    <strong>Copyright &copy; 2021 <a href=\"https://www.fjtorres.es\">fjtorres.es</a>.</strong>
+                    All rights reserved.
+                    <div class=\"float-right d-none d-sm-inline-block\">
+                        <b>Version</b> 1.0.0
+                    </div>
+                    </footer>
+                {% endblock %}                
             </div>
             <!-- ./wrapper -->º    
             {% block javascripts %}{% endblock %}
