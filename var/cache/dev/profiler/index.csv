@@ -259,3 +259,6 @@ cc9336,127.0.0.1,POST,https://127.0.0.1:8000/admin/login,1619290322,,302
 2c9108,127.0.0.1,GET,https://127.0.0.1:8000/admin,1619290326,,200
 943fb3,127.0.0.1,GET,https://127.0.0.1:8000/admin/roles,1619290333,,200
 45b7fc,127.0.0.1,POST,https://127.0.0.1:8000/admin/role/save,1619290355,,200
+42dd69,::1,GET,http://localhost:8000/,1619301137,,404
+98e1a2,::1,GET,http://localhost:8000/admin,1619301153,,302
+80ed7f,::1,GET,http://localhost:8000/admin/login,1619301157,,200

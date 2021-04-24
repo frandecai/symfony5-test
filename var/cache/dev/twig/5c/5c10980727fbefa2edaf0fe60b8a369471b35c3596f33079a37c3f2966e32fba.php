@@ -92,17 +92,17 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
     <!-- Font Awesome -->
     <link rel=\"stylesheet\" href=\"";
         // line 9
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/fontawesome-free/css/all.min.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin/css/fontawesome-free/css/all.min.css"), "html", null, true);
         echo "\">
     <!-- icheck bootstrap -->
     <link rel=\"stylesheet\" href=\"";
         // line 11
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/icheck-bootstrap/icheck-bootstrap.min.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin/css/icheck-bootstrap/icheck-bootstrap.min.css"), "html", null, true);
         echo "\">
     <!-- Theme style -->
     <link rel=\"stylesheet\" href=\"";
         // line 13
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/adminlte.min.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin/css/adminlte.min.css"), "html", null, true);
         echo "\">
 ";
         
@@ -224,17 +224,17 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
         echo "            <!-- jQuery -->
             <script src=\"";
         // line 77
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/jquery/jquery.min.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin/js/jquery/jquery.min.js"), "html", null, true);
         echo "\"></script>
             <!-- Bootstrap 4 -->
             <script src=\"";
         // line 79
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/bootstrap/bootstrap.bundle.min.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin/js/bootstrap/bootstrap.bundle.min.js"), "html", null, true);
         echo "\"></script>
             <!-- AdminLTE App -->
             <script src=\"";
         // line 81
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/adminlte.min.js"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/admin/js/adminlte.min.js"), "html", null, true);
         echo "\"></script>
         ";
         
@@ -270,11 +270,11 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
     <!-- Google Font: Source Sans Pro -->
     <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback\">
     <!-- Font Awesome -->
-    <link rel=\"stylesheet\" href=\"{{ asset('css/fontawesome-free/css/all.min.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('assets/admin/css/fontawesome-free/css/all.min.css') }}\">
     <!-- icheck bootstrap -->
-    <link rel=\"stylesheet\" href=\"{{ asset('css/icheck-bootstrap/icheck-bootstrap.min.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('assets/admin/css/icheck-bootstrap/icheck-bootstrap.min.css') }}\">
     <!-- Theme style -->
-    <link rel=\"stylesheet\" href=\"{{ asset('css/adminlte.min.css') }}\">
+    <link rel=\"stylesheet\" href=\"{{ asset('assets/admin/css/adminlte.min.css') }}\">
 {% endblock %}
 
 {% block body %}
@@ -338,13 +338,13 @@ class __TwigTemplate_5406a35be065c90420be63f3d65babf5f0edab4ca7c6e731b9c81788854
 
         {% block javascripts %}
             <!-- jQuery -->
-            <script src=\"{{ asset('js/jquery/jquery.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/admin/js/jquery/jquery.min.js') }}\"></script>
             <!-- Bootstrap 4 -->
-            <script src=\"{{ asset('js/bootstrap/bootstrap.bundle.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/admin/js/bootstrap/bootstrap.bundle.min.js') }}\"></script>
             <!-- AdminLTE App -->
-            <script src=\"{{ asset('js/adminlte.min.js') }}\"></script>
+            <script src=\"{{ asset('assets/admin/js/adminlte.min.js') }}\"></script>
         {% endblock %}
     </body>
-{% endblock %}", "admin/login.html.twig", "C:\\Users\\Usuario\\Documents\\DESARROLLOS\\symfony5-admin\\templates\\admin\\login.html.twig");
+{% endblock %}", "admin/login.html.twig", "C:\\DEVs\\Pruebas\\fjtorres.es_admin\\templates\\admin\\login.html.twig");
     }
 }
