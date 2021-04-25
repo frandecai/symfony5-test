@@ -20,6 +20,7 @@ return [
     'app_admin_role_save' => [[], ['_controller' => 'App\\Controller\\AdminController::roleSave'], [], [['text', '/admin/role/save']], [], []],
     'app_admin_role_remove' => [[], ['_controller' => 'App\\Controller\\AdminController::roleRemove'], [], [['text', '/admin/role/remove']], [], []],
     'app_admin_users' => [[], ['_controller' => 'App\\Controller\\AdminController::users'], [], [['text', '/admin/users']], [], []],
+    'app_index' => [[], ['_controller' => 'App\\Controller\\FrontController::index'], [], [['text', '/']], [], []],
     'app_admin_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/admin/login']], [], []],
     'app_admin_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/admin/logout']], [], []],
 ];
